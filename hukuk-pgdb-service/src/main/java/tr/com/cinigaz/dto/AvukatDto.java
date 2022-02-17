@@ -1,0 +1,28 @@
+package tr.com.cinigaz.dto;
+
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonProperty;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+public class AvukatDto {
+   // @JsonIgnore
+  //  private Integer id;
+    @JsonProperty("adi")
+    private String adi;
+    @JsonProperty("soyadi")
+    private String soyadi;
+    @JsonProperty("baroBilgisi")
+    private String baroBilgisi;
+    @JsonProperty("sicilNo")
+    private Integer sicilNo;
+
+
+
+}
